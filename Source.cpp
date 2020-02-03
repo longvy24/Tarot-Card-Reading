@@ -7,7 +7,7 @@ using namespace std;
 
 /* Three card spread fortune telling*/
 
-string  majorArcana [22] = {"The Fool (0)", "The Magician (I)", "The High Priestess (II)", "The Empress (III)", "The Emperor (IV)", "The Hierophant (V)", "The Lovers (VI)", "The Chariot (VII)", "Strength(VIII)", "The Hermit(IX)", "Wheel of Fortune(X)", "Justice(XI)", "The Hanged Man(XII)", "Death (XIII)", "Temperance (XIV)", "The Devil (XV)", "The Tower (XVI)", "The Star (XVII)", "The Moon (XVIII)", "The Sun (XIX)", "Judgement (XX)", "The World (XXI)"},
+string  majorArcana [22] = {"The Fool (0): ", "The Magician (I): ", "The High Priestess (II): ", "The Empress (III): ", "The Emperor (IV): ", "The Hierophant (V): ", "The Lovers (VI): ", "The Chariot (VII): ", "Strength(VIII): ", "The Hermit(IX): ", "Wheel of Fortune(X): ", "Justice(XI): ", "The Hanged Man(XII): ", "Death (XIII): ", "Temperance (XIV): ", "The Devil (XV): ", "The Tower (XVI): ", "The Star (XVII): ", "The Moon (XVIII): ", "The Sun (XIX): ", "Judgement (XX): ", "The World (XXI): "},
 
         answer,
         cont;
@@ -17,6 +17,9 @@ int past,
     future,
     rerollpresent,
     rerollfuture;
+
+int main ()
+{
 
 char *fool1 =  "In the Past position could represent a time in the past "
                   " where you could have taken another route " 
@@ -84,7 +87,7 @@ char *fool1 =  "In the Past position could represent a time in the past "
               
       *empe2  = "In the present position represents a current paradigm of rules and regulations or a strong "
                   "and well-known person. Look to somebody who can guide you down a new way of organisation "
-                  "and thinking. It’s also possible you may meet somebody famous, or somebody you used to idolise as a role model."
+                  "and thinking. It’s also possible you may meet somebody famous, or somebody you used to idolise as a role model.",
               
       *empe3  = "In the future position suggests a level of stability or a change of mindset to perceived "
                   "stability. Your  political views may change, or you may consider working ‘by the book’ instead "
@@ -120,7 +123,7 @@ char *fool1 =  "In the Past position could represent a time in the past "
               
       *lov3   = "In the future position is great if you are single right now. It’s the sort of meaning that anyone can see. "
                   "Love in the future. The standard tarot response. ‘Things will get better’. Remember in the Bible story; "
-                  "that Adam and Eve were in paradise and were kicked out. Don’t get disheartened."
+                  "that Adam and Eve were in paradise and were kicked out. Don’t get disheartened.",
 
               
       *chari1   = "In the Past position represents a past victory or success that is currently carrying you. You have to look "
@@ -129,11 +132,11 @@ char *fool1 =  "In the Past position could represent a time in the past "
               
       *chari2   = "In the present position shows that you are about to, or are currently in the process of achieving something. "
                   "You could be in the application process for a job you’ll eventually get, or learn a great deal from. The Prince "
-                  "has a Neutral look on his face. Though achieving, there is always a greater goal.";
+                  "has a Neutral look on his face. Though achieving, there is always a greater goal.",
               
       *chari3   = "In the future position gives you something to look forward to. Are you just laying the groundwork for a new "
                   "project? It is at it’s strongest when in the future position. Just be sure to be yourself. Working alone, "
-                  "in fact, might be good for you."
+                  "in fact, might be good for you.",
               
       *str1     = "In the Past position represents a time in the past when you have taken control of something and it has really "
                   "paid off, it’s put you where you are now! You probably aced that exam or got that promotion, or passed that "
@@ -145,7 +148,7 @@ char *fool1 =  "In the Past position could represent a time in the past "
       *str3     = "Strength in the future position is a good sign. Anything that is bothering you now will seem like nothing in the "
                   "near future. It happens all the time time. Just think about your worries generally. How often do you think about "
                   "things that happened 6 months, 1 year, 5 years ago, that used to affect you so much then, but now just have no "
-                  "impact? Time deals with all your problems."
+                  "impact? Time deals with all your problems.",
               
       *herm1     = "In the Past position represents prior solitude and rest after a long journey. You might have learned a big life "
                    "lesson recently and you need time alone now to reflect. Spending time to ourselves is good, even if this isn’t "
@@ -157,7 +160,7 @@ char *fool1 =  "In the Past position could represent a time in the past "
                     "contemplate for a short amount of time. Like an ancient astronomer trying to work out the fabric of the universe; "
                     "you have all the tools you need, you just need to work on your own thoughts and perception. Many great discoveries "
                     "were made by people on their own, through the lack of distraction in their lives, "
-                    "they were able to concentrate fully on their tasks."
+                    "they were able to concentrate fully on their tasks.",
               
       *herm3     = "The Hermit in the future position means one of two things. You could have thought about what is troubling you "
                     "for long enough to make a realisation and go on with your life, or you might be reaching this point very soon.",
@@ -231,8 +234,8 @@ char *fool1 =  "In the Past position could represent a time in the past "
                    "addiction and do not make the same mistake again. The Devil in the past position is a good sign, as it means it’s "
                    "all behind you. ",
         
-      *dev2      = "In the present position could mean a few things. As a tarot card, The Devil has many interpretations and has "
-                   "changed a lot over the years. Currently, you might be addicted to something, but you have no idea. 
+      *dev2      = "In the present position could mean a few things. As a tarot card, The                  Devil has many interpretations and has "
+                   "changed a lot over the years. Currently, you might be addicted to something, but you have no idea. "
                    "Is there something you do that you’re ashamed of? Something you wouldn’t tell anybody about? It’s time to stop. "
                    "You can only grow as a person with sacrifice and willpower. You might currently feel trapped or in a situation "
                    "that is ongoing and you feel like you’ll never escape. Understand that this is the present, and it won’t always "
@@ -255,7 +258,7 @@ char *fool1 =  "In the Past position could represent a time in the past "
       *tow3      = "In the future position represents coming challenges that are going to be extremely disrupting to your regular life. "
                    "Just as it was happening now, when it comes, try to deal with it in the present. Worrying never helps. Can you see "
                    "the signs of something falling apart already? It may well be that the inevitable is going to happen, "
-                   "but having some foreknowledge will help you a lot. "
+                   "but having some foreknowledge will help you a lot. ",
         
       *star1     = "In the Past position means that you could be recovering from a past altercation or conflict. This isn’t necessarily "
                    "a physical conflict, it could also mean a period of stress. Realise that it’s all over now and you can start your "
@@ -307,14 +310,14 @@ char *fool1 =  "In the Past position could represent a time in the past "
                    "time to approach them about it. If it feels like you’re doing something wrong in regards to a person, own up to it "
                    "before they find it out. ",
         
-      *jud3      =   "In the future position means that the choices you’ve made now are going to have a noticeable effect on the future.
+      *jud3      =   "In the future position means that the choices you’ve made now are going to have a noticeable effect on the future. "
                      "Even the smallest decision can affect the future in more ways than we will ever know. It’s also the choices we "
                      "don’t make that can matter. Remember not to put off or procrastinate in the meantime. Judgement day can come at "
                      "any time, so you have to keep true to yourself until it does. ",
 
       *wor1      = "In the Past position means that things are coming full circle. In a manner of thought, time is cyclical. "
                    "Months go by and come back again, weeks are but short rotations of the same 7 days. Make sure you understand "
-                   "your past and don’t make the same mistakes that might throw you back to where you started. "
+                   "your past and don’t make the same mistakes that might throw you back to where you started. ",
         
       *wor2      = "In the present position means that you might feel like you’ve done it all and there’s nothing else to conquer. "
                    "Help others realise their goals. If there’s something you’ve wanted for a while, it may very well appear very soon. "
@@ -327,15 +330,20 @@ char *fool1 =  "In the Past position could represent a time in the past "
 
       
 
-int main ()
-{
+
 srand((unsigned)time(0)); 
 
 past = rand()%22+1;
 present = rand()%22+1;
 future = rand()%22+1;
         
-        
+
+cout << majorArcana[21] << puts(wor1) << endl;
+cout << majorArcana[10] << puts(herm2) << endl;
+cout << majorArcana[3] << puts(empr3) << endl;
+
+
+
 
 /* This is test script for the random numbers and their rerolls
 cout << past << endl;
