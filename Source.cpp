@@ -342,7 +342,14 @@ past = rand()%22+1;
 present = rand()%22+1;
 future = rand()%22+1;
 
-/*    use to type text slowy on the screen*/
+  for (int i = 0; i < fool1.length(); i++)
+	{
+		cout << fool1[i];
+		sleep(50);
+	}      
+        
+        
+/*    use to type text slowy on the screen
 for(int j=0; j< fool1.size( ) ; j ++)
 {
 
@@ -350,7 +357,7 @@ for(int j=0; j< fool1.size( ) ; j ++)
           cout<<fool1[j];
 
 }
-    
+*/   
 
 /* Test Script for text
 cout << majorArcana[21] << puts(wor1) << endl;
