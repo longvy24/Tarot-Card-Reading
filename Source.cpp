@@ -15,9 +15,8 @@ string  majorArcana [22] = {"The Fool (0): ", "The Magician (I): ", "The High Pr
 
 int past,
     present,
-    future,
-    rerollpresent,
-    rerollfuture;
+    future;
+ 
 
 int main ()
 {
@@ -339,15 +338,15 @@ string fool1 =  "In the Past position could represent a time in the past "
 srand((unsigned)time(0)); 
 
 past = rand()%22+1;
+	
+do{	
 present = rand()%22+1;
-future = rand()%22+1;
+}while(present == past);
+	
+do{	
+future = rand()%22+1;	
+}while(future == present);
 
-  for (int i = 0; i < fool1.length(); i++)
-	{
-		cout << fool1[i];
-		sleep(50);
-	}      
-        
         
 /*    use to type text slowy on the screen
 for(int j=0; j< fool1.size( ) ; j ++)
